@@ -261,7 +261,7 @@ def functional_encoder(fast_weights, config , hidden_states, attention_mask,
 
 if __name__ == '__main__':
     
-    model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
+    model = BertForSequenceClassification.from_pretrained('microsoft/codebert-base')
     fast_weights = OrderedDict(model.named_parameters())
     
     input_ids = torch.Tensor([[  101,  1303,  1110,  1199,  3087,  1106,  4035, 13775,   102],

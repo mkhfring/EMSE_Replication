@@ -36,7 +36,7 @@ def main():
     parser.add_argument("--data", default='dataset.json', type=str,
                         help="Path to dataset file")
     
-    parser.add_argument("--bert_model", default='bert-base-uncased', type=str,
+    parser.add_argument("--bert_model", default='microsoft/codebert-base', type=str,
                         help="Path to bert model")
     
     parser.add_argument("--num_labels", default=2, type=int,
@@ -45,10 +45,10 @@ def main():
     parser.add_argument("--epoch", default=5, type=int,
                         help="Number of outer interation")
     
-    parser.add_argument("--k_spt", default=80, type=int,
+    parser.add_argument("--k_spt", default=15, type=int,
                         help="Number of support samples per task")
     
-    parser.add_argument("--k_qry", default=20, type=int,
+    parser.add_argument("--k_qry", default=5, type=int,
                         help="Number of query samples per task")
 
     parser.add_argument("--outer_batch_size", default=2, type=int,
